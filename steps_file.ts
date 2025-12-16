@@ -7,6 +7,7 @@ export = function() {
 
     login(this: CodeceptJS.I, username: string, password: string){
       this.amOnPage('https://www.google.com');
+      this.wait(5);
       // this.fillField('#user', username);
       // this.fillField('#pass', password);
       // this.click('#submit');
