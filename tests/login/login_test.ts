@@ -5,5 +5,5 @@ const {I} = inject();
 
 Scenario('User Logs In', ()=> {
     I.login(loginData.validUser.user, loginData.validUser.pass);
-    I.see('Google');
+    I.seeInTitle('Google');
 })
