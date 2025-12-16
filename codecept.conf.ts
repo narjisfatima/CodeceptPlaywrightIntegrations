@@ -24,5 +24,15 @@ export const config: CodeceptJS.MainConfig = {
       enabled: true
     }
   },
+  mocha:{
+    reporter: 'mochawesome', 
+    reporterOptions :{
+      reportDir: './output/html',
+      reportFilename: 'report', 
+      inlineAssets: true, 
+      saveHtml: true, 
+      saveJson: true
+    }
+  },
   name: 'CodeceptPlaywrightIntegrations'
 }
