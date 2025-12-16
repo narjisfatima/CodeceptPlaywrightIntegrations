@@ -3,7 +3,7 @@ name: Login Page Tests
 on: 
   push:
     branches:
-      - main
+      - '**'
   pull_request:
   workflow_dispatch:
 
