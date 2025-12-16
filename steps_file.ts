@@ -2,9 +2,15 @@
 
 export = function() {
   return actor({
-
     // Define custom steps here, use 'this' to access default methods of I.
     // It is recommended to place a general 'login' function here.
+
+    login(this: CodeceptJS.I, username: string, password: string){
+      this.amOnPage('https://www.google.com');
+      // this.fillField('#user', username);
+      // this.fillField('#pass', password);
+      // this.click('#submit');
+    }
 
   });
 }
